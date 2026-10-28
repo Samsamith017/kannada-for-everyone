@@ -9,14 +9,14 @@ export default function App() {
   const [darkMode, setDarkMode] = useState(true);
 
   //block to register the service worker
-  /*
+  
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
         .then(() => console.log('Service Worker Registered'))
         .catch((err) => console.log('Service Worker registration failed: ', err));
     }
-  }, []);*/
+  }, []);
 
   // Flashcards state
   const [cardIndex, setCardIndex] = useState(0);
