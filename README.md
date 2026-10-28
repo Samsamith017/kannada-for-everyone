@@ -7,20 +7,20 @@
 
 ---
 
-Live Demo:
+### Live Demo:
 * **Production URL:** [https://kannada-for-everyone-phi.vercel.app](https://kannada-for-everyone-phi.vercel.app)
 * **Deployment Platform:** Vercel
 
 ---
 
-Project Overview:
+### Project Overview:
 * Non-native residents and visitors in Karnataka frequently encounter language barriers during routine activities such as commuting, shopping, asking for directions, or ordering food. 
 
 **Kannada Survival Kit** addresses this challenge by providing a lightweight, responsive, and accessible resource. The platform features curated English-to-Kannada translations, phonetic transliterations, interactive flashcards, practice quizzes, and offline accessibility to support practical communication skills.
 
 ---
 
-Key Features:
+### Key Features:
 * **Categorized Vocabulary & Phrases:** Organized modules covering high-frequency words and expressions (Question Words, Pronouns, Directions, Greetings, and Basics).
 * **Phonetic Pronunciation Guidance:** Each entry pairs original script display with English translation and Romanized Kannada transliteration.
 * **Instant Vocabulary Reference:** Searchable utility for rapid reference during live interactions.
@@ -30,7 +30,7 @@ Key Features:
 
 ---
 
-Tech Stack:
+### Tech Stack:
 * **Framework:** Next.js (App Router)
 * **Library:** React
 * **Styling:** Tailwind CSS
@@ -40,13 +40,13 @@ Tech Stack:
 
 ---
 
-Local Development Setup
+### Local Development Setup
 
-### Prerequisites:
+#### Prerequisites:
 * Node.js (v18.0 or higher)
 * npm (v9.0 or higher)
 
-### Installation & Execution:
+#### Installation & Execution:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Samsamith017/kannada-for-everyone.git
@@ -75,7 +75,7 @@ Local Development Setup
 
 ---
 
-## 📁Repository Structure
+### 📁Repository Structure
 
 ```text
 kannada-for-everyone/
@@ -92,7 +92,7 @@ kannada-for-everyone/
 
 ---
 
-## Project Metadata:
+### Project Metadata:
 * **Project Title:** Kannada for Everyone
 * **Repository:** `Samsamith017/kannada-for-everyone`
 * **Core Technologies:** Next.js, React, Tailwind CSS, PWA
