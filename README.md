@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kannada Survival Kit
+
+An interactive web application designed to help users learn essential Kannada vocabulary, daily conversational phrases, and grammar structures through a responsive user interface.
+
+## Live Demo
+* **Production URL**: https://kannada-for-everyone-phi.vercel.app
+
+---
+
+## Features
+* **Categorized Vocabulary**: Structured modules covering basic words, question words, pronouns, directions, and greetings.
+* **Daily Survival Phrases**: Real-world communication tools featuring original script display, English transliteration, and semantic translations.
+* **Interactive Learning Tools**: Built-in flashcards, shuffle quizzes, and progress tracking to reinforce retention.
+* **Progressive Web App (PWA)**: Fully optimized with Service Workers for offline accessibility and responsive design across viewports.
+
+---
+
+## Tech Stack
+* **Framework**: Next.js (App Router)
+* **Library**: React
+* **Styling**: Tailwind CSS
+* **Build Tool**: Turbopack
+* **Deployment**: Vercel
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+Ensure you have Node.js installed on your local machine.
 
-```bash
+### Installation & Local Development
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Samsamith017/kannada-for-everyone.git](https://github.com/Samsamith017/kannada-for-everyone.git)
+
+2. Navigate into the project directory:
+Bash
+cd kannada-for-everyone
+
+Install dependencies:
+Bash
+npm install
+
+Run the development server:
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+View in browser:
+Navigate to http://localhost:3000 to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Project Structure
+app/: Next.js App Router pages, components, and layouts.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+public/: Static assets, icons, and service worker scripts.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+styles/: Global stylesheets and Tailwind configurations.
