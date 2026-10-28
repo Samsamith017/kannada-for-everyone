@@ -1,4 +1,4 @@
-<h1>Kannada for Everyone</h1> <h2>(Kannada Survival Kit)</h2>
+<h1>Kannada for Everyone</h1> (Kannada Survival Kit)
 
 > An interactive, offline-ready Progressive Web Application (PWA) designed to assist non-native speakers, students, and visitors in learning essential Kannada for daily interactions, travel, dining, and navigation.
 
