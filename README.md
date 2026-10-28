@@ -9,7 +9,7 @@
 
 Live Demo
 * **Production URL:** [https://kannada-for-everyone-phi.vercel.app](https://kannada-for-everyone-phi.vercel.app)
-* **Deployment Platform:** (https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+* **Deployment Platform:** [![Vercel](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)]
 
 ---
 
