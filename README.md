@@ -1,4 +1,4 @@
-# Kannada for Everyone (Kannada Survival Kit)
+# Kannada for Everyone ***(Kannada Survival Kit)***
 
 > An interactive, offline-ready Progressive Web Application (PWA) designed to assist non-native speakers, students, and visitors in learning essential Kannada for daily interactions, travel, dining, and navigation.
 
@@ -8,25 +8,25 @@
 ---
 
 ### Live Demo:
-* **Production URL:** [https://kannada-for-everyone-phi.vercel.app](https://kannada-for-everyone-phi.vercel.app)
-* **Deployment Platform:** Vercel
+* ***Production URL:*** [https://kannada-for-everyone-phi.vercel.app](https://kannada-for-everyone-phi.vercel.app)
+* ***Deployment Platform:*** Vercel
 
 ---
 
 ### Project Overview:
-* Non-native residents and visitors in Karnataka frequently encounter language barriers during routine activities such as commuting, shopping, asking for directions, or ordering food. 
+Non-native residents and visitors in Karnataka frequently encounter language barriers during routine activities such as commuting, shopping, asking for directions, or ordering food. 
 
-**Kannada Survival Kit** addresses this challenge by providing a lightweight, responsive, and accessible resource. The platform features curated English-to-Kannada translations, phonetic transliterations, interactive flashcards, practice quizzes, and offline accessibility to support practical communication skills.
+***Kannada Survival Kit*** addresses this challenge by providing a lightweight, responsive, and accessible resource. The platform features curated English-to-Kannada translations, phonetic transliterations, interactive flashcards, practice quizzes, and offline accessibility to support practical communication skills.
 
 ---
 
 ### Key Features:
-* **Categorized Vocabulary & Phrases:** Organized modules covering high-frequency words and expressions (Question Words, Pronouns, Directions, Greetings, and Basics).
-* **Phonetic Pronunciation Guidance:** Each entry pairs original script display with English translation and Romanized Kannada transliteration.
-* **Instant Vocabulary Reference:** Searchable utility for rapid reference during live interactions.
-* **Interactive Flashcards:** Active-recall tools to reinforce retention.
-* **Self-Assessment Quizzes:** Practice modules to evaluate comprehension and monitor progress.
-* **Progressive Web App (PWA):** Equipped with service workers for full offline availability and mobile home screen installation.
+* ***Categorized Vocabulary & Phrases:*** Organized modules covering high-frequency words and expressions (Question Words, Pronouns, Directions, Greetings, and Basics).
+* ***Phonetic Pronunciation Guidance:*** Each entry pairs original script display with English translation and Romanized Kannada transliteration.
+* ***Instant Vocabulary Reference:*** Searchable utility for rapid reference during live interactions.
+* ***Interactive Flashcards:*** Active-recall tools to reinforce retention.
+* ***Self-Assessment Quizzes:*** Practice modules to evaluate comprehension and monitor progress.
+* ***Progressive Web App (PWA):*** Equipped with service workers for full offline availability and mobile home screen installation.
 
 ---
 
@@ -42,11 +42,11 @@
 
 ### Local Development Setup
 
-#### Prerequisites:
+#### ***Prerequisites:***
 * Node.js (v18.0 or higher)
 * npm (v9.0 or higher)
 
-#### Installation & Execution:
+#### ***Installation & Execution:***
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Samsamith017/kannada-for-everyone.git
@@ -75,7 +75,7 @@
 
 ---
 
-### 📁Repository Structure
+### 📁Repository Structure:
 
 ```text
 kannada-for-everyone/
@@ -93,7 +93,7 @@ kannada-for-everyone/
 ---
 
 ### Project Metadata:
-* **Project Title:** Kannada for Everyone
+* **Project Title:** ***Kannada for Everyone***
 * **Repository:** `Samsamith017/kannada-for-everyone`
 * **Core Technologies:** Next.js, React, Tailwind CSS, PWA
 * **Live URL:** [https://kannada-for-everyone-phi.vercel.app](https://kannada-for-everyone-phi.vercel.app)
