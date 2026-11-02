@@ -5,11 +5,10 @@ import React, { useState, useEffect, useMemo } from 'react';
 export default function App() {
   const [activeTab, setActiveTab] = useState('words');
 
-  // Dark / Light Theme state (Defaulted to True / Dark Mode)
+  // Dark / Light Theme
   const [darkMode, setDarkMode] = useState(true);
 
   //block to register the service worker
-  
   useEffect(() => {
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
@@ -22,7 +21,7 @@ export default function App() {
   const [cardIndex, setCardIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
-  // Quiz state & Review Round state
+  // Quiz 
   const [shuffledQuiz, setShuffledQuiz] = useState([]);
   const [quizIndex, setQuizIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -32,7 +31,7 @@ export default function App() {
   const [isReviewRound, setIsReviewRound] = useState(false);
   const [pendingReviewQuestions, setPendingReviewQuestions] = useState([]);
 
-  // Streak & Lost Streaks state with localStorage & 24h window logic
+  // Streak
   const [streak, setStreak] = useState(1);
   const [lostStreaks, setLostStreaks] = useState(0);
 
@@ -76,13 +75,13 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [targetLang, setTargetLang] = useState('kn');
 
-  // Basic Words Category Selector
+  // Basic Words
   const [activeWordCategory, setActiveWordCategory] = useState('Question Words');
 
-  // Interactive Sub-Box State for "How"
+  // Sub-Box State for "How"
   const [showHowSubBox, setShowHowSubBox] = useState(false);
 
-  // Modal State for Daily Phrases Situation Subheadings
+  // Daily Phrases Situation
   const [selectedPhraseCategory, setSelectedPhraseCategory] = useState('Travel');
 
   // Variations for "How"
@@ -94,7 +93,7 @@ export default function App() {
     { kannada: 'ಎಷ್ಟು ಬಾರಿ?', english: 'How often?', phonetic: 'Eshtu bāri?' }
   ];
 
-  // 1. Core Vocabulary Database (Basic Words)
+  // 1.Basic Words
   const words = useMemo(() => [
     { kannada: 'ಏನು', english: 'What', phonetic: 'Yēnu', category: 'Question Words', keywords: ['what', 'yenu', 'enu'] },
     { kannada: 'ಯಾರು', english: 'Who', phonetic: 'Yāru', category: 'Question Words', keywords: ['who', 'yaru'] },
@@ -140,7 +139,7 @@ export default function App() {
     { kannada: 'ಊಟ', english: 'Food / Meal', phonetic: 'Ūta', category: 'Basics', keywords: ['food', 'meal', 'lunch', 'dinner', 'oota'] }
   ], []);
 
-  // 2. Grouped Daily Phrases by Context
+  // 2.Daily Phrases
   const phraseCategories = useMemo(() => [
     {
       context: 'Travel',
@@ -224,18 +223,15 @@ export default function App() {
     return [...words, ...allPhrases];
   }, [words, allPhrases]);
 
-  // Dynamically generate diverse quiz questions from all Words and Phrases with shuffled options
+  // quiz questions
   const baseQuizQuestions = useMemo(() => {
     return allVocabulary.map((item) => {
-      // Pick 3 random distractor answers from other vocabulary items
       const distractors = allVocabulary
         .filter((v) => v.english !== item.english)
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)
         .map((v) => v.english);
-
       const options = [item.english, ...distractors].sort(() => Math.random() - 0.5);
-
       return {
         question: `What is the English meaning of "${item.kannada}" (${item.phonetic})?`,
         options,
@@ -366,14 +362,14 @@ export default function App() {
         darkMode ? 'bg-gray-950 text-gray-100' : 'bg-amber-50/90 text-gray-900'
       }`}>
         
-        {/* Fixed Slantly Flowing Yellow River Gradient on Top Left Corner */}
+        {/* Flowing Yellow River Gradient */}
         <div className={`fixed top-0 left-0 w-full h-full pointer-events-none z-0 transition-opacity duration-500 ${
           darkMode 
             ? 'bg-[linear-gradient(135deg,rgba(250,204,21,0.25)_0%,rgba(245,158,11,0.08)_40%,transparent_70%)]' 
             : 'bg-[linear-gradient(135deg,rgba(250,204,21,0.45)_0%,rgba(251,191,36,0.2)_40%,transparent_70%)]'
         }`} />
 
-        {/* Fixed Slantly Flowing Red River Gradient on Bottom Right Corner */}
+        {/* Flowing Red River Gradient */}
         <div className={`fixed bottom-0 right-0 w-full h-full pointer-events-none z-0 transition-opacity duration-500 ${
           darkMode 
             ? 'bg-[linear-gradient(315deg,rgba(239,68,68,0.3)_0%,rgba(225,29,72,0.1)_40%,transparent_70%)]' 
@@ -382,7 +378,7 @@ export default function App() {
 
         <div className="max-w-5xl mx-auto space-y-6 w-full relative z-10 mb-12">
 
-          {/* Dynamic Header & Progress Dashboard with Ultra Glassmorphism */}
+          {/* Header & Progress Dashboard */}
           <header className={`backdrop-blur-2xl rounded-2xl p-5 sm:p-6 shadow-2xl border transition-colors duration-300 ${
             darkMode ? 'bg-gray-900/30 border-white/10 shadow-black/40' : 'bg-white/35 border-white/60 shadow-orange-500/5'
           }`}>
@@ -403,7 +399,7 @@ export default function App() {
                 </p>
               </div>
 
-              {/* Dashboard Stats & Theme Toggle Button */}
+              {/* Dashboard Stats & Toggle Button */}
               <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 w-full md:w-auto">
                 {/* Dark/Light Toggle Button */}
                 <button
@@ -459,7 +455,7 @@ export default function App() {
             </div>
           </header>
 
-          {/* Navigation Tabs with Glassmorphism */}
+          {/* Navigation Tabs */}
           <nav className={`backdrop-blur-2xl p-2 rounded-2xl shadow-xl border flex flex-wrap justify-center gap-2 ${
             darkMode ? 'bg-gray-900/30 border-white/10 shadow-black/20' : 'bg-white/40 border-white/60 shadow-orange-500/5'
           }`}>
@@ -969,7 +965,7 @@ export default function App() {
 
         </div>
 
-        {/* Fixed Glassy Footer */}
+        {/* Footer */}
         <footer className={`fixed bottom-0 left-0 right-0 z-40 text-center py-3 backdrop-blur-2xl border-t shadow-2xl transition-colors duration-300 ${
           darkMode ? 'bg-gray-950/85 border-white/10 text-gray-400' : 'bg-white/85 border-white/60 text-gray-500'
         }`}>
